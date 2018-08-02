@@ -9,6 +9,9 @@
 
     <p id="resultado1"></p>
     <p id="resultado2"></p>
+    <div id="linka">
+
+    </div>
 
   </body>
   <script type="text/javascript">
@@ -22,6 +25,24 @@
 
     document.getElementById("resultado1").innerHTML = resultado1;
     document.getElementById("resultado2").innerHTML = resultado2;
+
+
+    for(i=0; i<10;i++){
+      var nombre = "link" + " / ";
+      var objeto = document.createElement("A");                       // Create a <p> element
+      var muesta = document.createTextNode(nombre);
+      var referencia = document.createAttribute("href");
+      referencia.value = "http://www.google.com.ar";        // Create a text node
+      objeto.setAttributeNode(referencia);
+      objeto.appendChild(muesta);
+      console.log(objeto);
+      console.log(i);
+                                                // Append the text to <p>
+      document.getElementById("linka").appendChild(objeto);
+
+    }
+
+               // Append <p> to <div> with id="myDIV"
 
   </script>
 </html>
