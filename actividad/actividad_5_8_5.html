@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Comentarios de una linea</h1>
+
+      <p id="var1"></p><!--párrafo con id var1.-->
+
+      <p id="var2"></p> <!--párrafo con id var2.-->
+
+      <p id="var3"></p> <!--párrafo con id var3.-->
+
+      <p id="var4"></p> <!--párrafo con id var4.-->
+
+      <p id="var5"></p> <!--párrafo con id var5.-->
+
+      <p id="resultado"></p> <!--párrafo con id resultado.-->
+
+  </body>
+
+  <script>
+
+        var a = 50; //variable a con valor 50.
+
+        document.getElementById("var1").innerHTML=a; //muestro el valor de la variable a en el parrafo con id var1-
+
+
+
+        var b = 43 * 3; //variable b que almacena la multiplicacion de 43 con 3.
+
+        document.getElementById("var2").innerHTML=b; //muestro el valor de la variable b en el parrafo con id var2-
+
+        var c = (32/2)*4; //variable c que almacena el resultado de la multiplicacion que resulta de la division de 32 entre 2.
+
+        document.getElementById("var3").innerHTML=c; ////muestro el valor de la variable c en el parrafo con id var3-
+
+        var d = "Hola como esta?"; //variable d que almacena una cadena de texto
+
+        document.getElementById("var4").innerHTML=d; //muestro el valor de la variable d en el parrafo var4.
+
+        var e = "Next University"; //variable e que almacena una cadena de texto.
+
+        document.getElementById("var5").innerHTML=e; //se muestra el valor de la variable e en el parrafo var5.
+        /*
+        esta es una funcion de resulta
+        */
+        function resta() {
+
+            return 4 - 10;
+
+        }
+        /*
+        variable resultado que almacena el retorno de la funcion resta
+        */
+        var resultado=resta();
+        /*
+        se muesta en el parrafo "resultado"
+        el valor de la variable resultado.
+        */
+        document.getElementById("resultado").innerHTML=resultado;
+
+  </script>
+</html>

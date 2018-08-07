@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Comentarios de una line</h1>
+
+    <p id="var1"></p>
+
+    <h1>Comentario de multiples lineas</h1>
+
+    <p id="resultado"></p>
+  </body>
+
+  <script type="text/javascript">
+    //Comentario de una sola linea
+    var t = 26; //Declaramos una variable de tipo numerica con valor 26.
+    document.getElementById("var1").innerHTML = t; //Imprimimos la variable t.
+
+    //Comentario de multiples lineas.
+
+    /*
+    La función suma permite sumar dos numeros y retorna el resultado
+    */
+
+    function suma(){
+      return 4 + 10;
+    }
+    var resultado = suma();
+    document.getElementById("resultado").innerHTML = resultado;
+  </script>
+</html>
