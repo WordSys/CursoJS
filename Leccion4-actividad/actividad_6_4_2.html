@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <h1>Estudiante 1</h1>
+      <p id="ac1"> </p>
+      <p id="an1"> </p>
+      <p id="at1"> </p>
+
+      <h1>Estudiante 2</h1>
+      <p id="ac2"> </p>
+      <p id="an2"> </p>
+      <p id="at2"> </p>
+
+      <h1>Estudiante 3</h1>
+      <p id="ac3"> </p>
+      <p id="an3"> </p>
+      <p id="at3"> </p>
+
+  </body>
+  <script type="text/javascript">
+
+  function estudiante(codigo, nombre, telefono){
+    this.codigo = codigo;
+    this.nombre = nombre;
+    this.telefono = telefono;
+
+  }
+  var estudiante1 = new estudiante("sis001","Hernan gomez",125421450);
+  var estudiante2 = new estudiante("sis002","Mariano closs",13121545);
+  var estudiante3 = new estudiante("sis003","Esteban quito",13254118);
+
+  document.getElementById("ac1").innerHTML = "Código : " + estudiante1.codigo;
+  document.getElementById("an1").innerHTML = "Nombre : " + estudiante1.nombre;
+  document.getElementById("at1").innerHTML = "Telefono : " + estudiante1.telefono;
+
+  document.getElementById("ac2").innerHTML = "Código : " + estudiante2.codigo;
+  document.getElementById("an2").innerHTML = "Nombre : " + estudiante2.nombre;
+  document.getElementById("at2").innerHTML = "Telefono : " + estudiante2.telefono;
+
+  document.getElementById("ac3").innerHTML = "Código : " + estudiante3.codigo;
+  document.getElementById("an3").innerHTML = "Nombre : " + estudiante3.nombre;
+  document.getElementById("at3").innerHTML = "Telefono : " + estudiante3.telefono;
+
+  </script>
+</html>
