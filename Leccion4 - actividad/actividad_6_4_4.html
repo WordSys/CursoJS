@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <h1>Vehiculo 1</h1>
+      <p id="vp1"> </p>
+      <p id="vm1"> </p>
+      <p id="vmod1"> </p>
+
+      <h1>Vehiculo 2</h1>
+      <p id="vp2"> </p>
+      <p id="vm2"> </p>
+      <p id="vmod2"> </p>
+
+      <h1>Vehiculo 3</h1>
+      <p id="vp3"> </p>
+      <p id="vm3"> </p>
+      <p id="vmod3"> </p>
+
+  </body>
+  <script type="text/javascript">
+
+  function vehiculo(placa, marca, modelo){
+    this.placa = placa;
+    this.marca = marca;
+    this.modelo = modelo;
+  }
+
+  var vehiculo1 = new vehiculo("ab 007 cx","Ford",2017);
+  var vehiculo2 = new vehiculo("ac 174 ba","Renault",2018);
+  var vehiculo3 = new vehiculo("ad 602 df","VolksWagen",2018);
+
+  document.getElementById("vp1").innerHTML = "Placa : " + vehiculo1.placa;
+  document.getElementById("vm1").innerHTML = "Marca : " + vehiculo1.marca;
+  document.getElementById("vmod1").innerHTML = "Modelo : " + vehiculo1.modelo;
+
+  document.getElementById("vp2").innerHTML = "Placa : " + vehiculo2.placa;
+  document.getElementById("vm2").innerHTML = "Marca : " + vehiculo2.marca;
+  document.getElementById("vmod2").innerHTML = "Modelo : " + vehiculo2.modelo;
+
+  document.getElementById("vp3").innerHTML = "Placa : " + vehiculo3.placa;
+  document.getElementById("vm3").innerHTML = "Marca : " + vehiculo3.marca;
+  document.getElementById("vmod3").innerHTML = "Modelo : " + vehiculo3.modelo;
+
+  </script>
+</html>

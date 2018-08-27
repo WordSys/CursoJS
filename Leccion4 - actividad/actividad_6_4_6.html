@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Funcion Suma</title>
+  </head>
+  <body>
+    <h1>Resultado</h1>
+      <p id="val1"></p>
+      <p id="val2"></p>
+      <p id="res"></p>
+
+
+  </body>
+  <script type="text/javascript">
+
+
+
+
+  function suma(x,y){
+    this.x = x;
+    this.y = y;
+     return x + y;;
+  }
+  var res = suma(10,2);
+
+  document.getElementById("val1").innerHTML = "Valor 1 : " + x;
+  document.getElementById("val2").innerHTML = "Valor 2 : " + y;
+  document.getElementById("res").innerHTML = "Resultado : " + res;
+  </script>
+</html>

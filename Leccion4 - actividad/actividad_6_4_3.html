@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <h1>Persona 1</h1>
+      <p id="pi1"> </p>
+      <p id="pn1"> </p>
+      <p id="pe1"> </p>
+
+      <h1>Persona 2</h1>
+      <p id="pi2"> </p>
+      <p id="pn2"> </p>
+      <p id="pe2"> </p>
+
+      <h1>Persona 3</h1>
+      <p id="pi3"> </p>
+      <p id="pn3"> </p>
+      <p id="pe3"> </p>
+
+  </body>
+  <script type="text/javascript">
+
+  function persona(id, nombre, edad){
+    this.id = id;
+    this.nombre = nombre;
+    this.edad = edad;
+
+  }
+  var persona1 = new persona("sis001","Hernan gomez",30);
+  var persona2 = new persona("sis002","Mariano closs",18);
+  var persona3 = new persona("sis003","Esteban quito",25);
+
+  document.getElementById("pi1").innerHTML = "Id : " + persona1.id;
+  document.getElementById("pn1").innerHTML = "Nombre : " + persona1.nombre;
+  document.getElementById("pe1").innerHTML = "Edad : " + persona1.edad;
+
+  document.getElementById("pi2").innerHTML = "Id : " + persona2.id;
+  document.getElementById("pn2").innerHTML = "Nombre : " + persona2.nombre;
+  document.getElementById("pe2").innerHTML = "Edad : " + persona2.edad;
+
+  document.getElementById("pi3").innerHTML = "Id : " + persona3.id;
+  document.getElementById("pn3").innerHTML = "Nombre : " + persona3.nombre;
+  document.getElementById("pe3").innerHTML = "Edad : " + persona3.edad;
+
+  </script>
+</html>
