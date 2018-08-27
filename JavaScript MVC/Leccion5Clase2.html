@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Strings</h1>
+
+    <p id="s1"></p>
+    <p id="s2"></p>
+    <p id="s3"></p>
+    <p id="s4"></p>
+
+    <h1>Strings Métodos</h1>
+
+    <p id="s5"></p>
+    <p id="s6"></p>
+    <p id="s7"></p>
+    <p id="s8"></p>
+    <p id="s9"></p>
+    <p id="s10"></p>
+    <p id="s11"></p>
+    <p id="s12"></p>
+    <p id="s13"></p>
+
+  </body>
+  <script type="text/javascript">
+
+  var saludo1 = "Saludo comillas dobles !!";
+  var saludo2 =  'Saludo con comillas simples !!';
+
+  var tamanioString = saludo2.length;
+
+  var objetoString = new String("Objeto String");
+
+  document.getElementById("s1").innerHTML = saludo1;
+  document.getElementById("s2").innerHTML = saludo2;
+  document.getElementById("s3").innerHTML = tamanioString;
+  document.getElementById("s4").innerHTML = objetoString;
+
+  var string1 = "Esta es";
+  var string2 = " una cadena de";
+  var string3 = " texto concatenado !!!";
+  var stringConcat = string1.concat(string2,string3);
+  document.getElementById("s5").innerHTML = stringConcat;
+
+  var mensaje1 = "Programando con PHP";
+  document.getElementById("s6").innerHTML = mensaje1;
+
+  var mensaje2 = mensaje1.replace(" PHP"," javascript");
+  document.getElementById("s7").innerHTML = mensaje2;
+
+  var mensaje3 = "Luchar, reir y vivir; Esa es la clave";
+  document.getElementById("s8").innerHTML = mensaje3;
+  document.getElementById("s9").innerHTML = mensaje3.substring(8,20);
+
+  var mensaje4 = "El ignorante afirma, el sabio duda y reflexiona";
+  document.getElementById("s10").innerHTML = mensaje4;
+  document.getElementById("s11").innerHTML = mensaje4.toLowerCase();
+  var mensaje5 = "La verdadera vida tiene lugar en nuestro interior";
+  document.getElementById("s12").innerHTML = mensaje5;
+  document.getElementById("s13").innerHTML = mensaje5.toUpperCase();
+
+
+  </script>
+</html>
