@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Metodo suma Number.prototype</h1>
+
+    <p id="numero"></p>
+  </body>
+  <script type="text/javascript">
+
+
+  Number.prototype.metodoDivision = function(){
+    return this/2;
+  }
+  var numero = 352;
+
+  document.getElementById("numero").innerHTML = numero.metodoDivision();
+
+  </script>
+</html>
